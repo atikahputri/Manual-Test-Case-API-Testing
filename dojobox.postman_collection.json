@@ -1,0 +1,785 @@
+{
+	"info": {
+		"_postman_id": "b9d2ad19-f21c-4a5c-b6d8-ea4d053c2595",
+		"name": "dojobox",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21347526"
+	},
+	"item": [
+		{
+			"name": "GET Country",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET Single Country",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/country/:countryId",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"country",
+						":countryId"
+					],
+					"variable": [
+						{
+							"key": "countryId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/users/:userId",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"users",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Single Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/users/:userId",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"users",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Single User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1111,\r\n  \"email\": \"cicah@testmail.com\",\r\n  \"full_name\": \"Acicah\" ,\r\n  \"gender\": \"Wanita\",\r\n  \"date_of_birth\": \"00 00 00\",\r\n  \"country_code\": 1\r\n}"
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/user",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Merchant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/users/:userId",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"users",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Single Merchant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/users/:userId",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"users",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Single Merchant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/merchant",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"merchant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Single Merchant",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"admin_id\": 1,\r\n  \"country_code\": 1,\r\n  \"merchant_name\": \"cicah.corp.update\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/:merchantId",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						":merchantId"
+					],
+					"variable": [
+						{
+							"key": "merchantId",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Single Merchant",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\" : 39\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/merchant",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"merchant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/product",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Product by Merchant",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/products/get-products-list-by-merchant-name/:merchant_name",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"products",
+						"get-products-list-by-merchant-name",
+						":merchant_name"
+					],
+					"variable": [
+						{
+							"key": "merchant_name",
+							"value": "cicahcorp"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Single Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/product/:productId",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"product",
+						":productId"
+					],
+					"variable": [
+						{
+							"key": "productId",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Single Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"merchant_id\": 1,\r\n  \"name\":\"cicah collection\",\r\n  \"price\": 50000,\r\n  \"status\": \"udah diisi\"\r\n}"
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/product",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Single Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"56c5fffb-19d2-4b79-aa34-80265a9783a5\"\r\n}"
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/product",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Single Product",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Edited product\",\r\n  \"price\": 12500000,\r\n  \"status\": \"dipinjamkan\"\r\n}"
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/product",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\\"
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/order",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Single Orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\\"
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/order/:orderId",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"order",
+						":orderId"
+					],
+					"variable": [
+						{
+							"key": "orderId",
+							"value": "e9c38cdb-512b-40b8-a436-8d1c1360e55e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Single Orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\\"
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/order/:userId/:status",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"order",
+						":userId",
+						":status"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": null
+						},
+						{
+							"key": "status",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Single Orders",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user_id\": 44,\r\n  \"status\": \"pesanan diproses update\"\r\n}"
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/order/:orderId",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"order",
+						":orderId"
+					],
+					"variable": [
+						{
+							"key": "orderId",
+							"value": "1029b5a5-fee9-476e-97ec-a1d0c166c3f7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Single Orders",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user_id\": 44,\r\n  \"status\": \"pesanan diproses update\"\r\n}"
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/order/:orderId",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"order",
+						":orderId"
+					],
+					"variable": [
+						{
+							"key": "orderId",
+							"value": "1029b5a5-fee9-476e-97ec-a1d0c166c3f7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Order Item",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/order-item",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"order-item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Single Order",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/order-item",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"order-item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Single Order Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/order-item/:order_id/:product_id/:quantity",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"order-item",
+						":order_id",
+						":product_id",
+						":quantity"
+					],
+					"variable": [
+						{
+							"key": "order_id",
+							"value": "aff69d72-26ce-404c-8e55-f300cf00d941"
+						},
+						{
+							"key": "product_id",
+							"value": "7c02f47f-a8b7-493e-8f5e-da7ef8f172cc"
+						},
+						{
+							"key": "quantity",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Single Order Item",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\" : \"selesai\"\r\n}"
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/order/:orderItemId",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"order",
+						":orderItemId"
+					],
+					"variable": [
+						{
+							"key": "orderItemId",
+							"value": "8587ad9c-ba73-4fe4-8187-54903444ab3b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Single Order Item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dojobox-bootcamp.hasura.app/api/rest/order-item/:orderListId",
+					"protocol": "https",
+					"host": [
+						"dojobox-bootcamp",
+						"hasura",
+						"app"
+					],
+					"path": [
+						"api",
+						"rest",
+						"order-item",
+						":orderListId"
+					],
+					"variable": [
+						{
+							"key": "orderListId",
+							"value": "ceefa823-5b44-42c6-90f7-0fb316e4e9a1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
